@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #e8e8e8;
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.quiz-container {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.quiz-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #f0f0f0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.progress {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #b8c5d6;
+  margin-bottom: 20px;
+}
+
+.question-box {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.question {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin: 0;
+  color: #ffffff;
+}
+
+.answer-display {
+  background: rgba(100, 150, 255, 0.15);
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 4px solid #6496ff;
+  margin-bottom: 25px;
+}
+
+.answer-label {
+  font-size: 1.1rem;
+  color: #b8c5d6;
+  margin: 0 0 10px 0;
+}
+
+.answer-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+  text-shadow: 0 2px 10px rgba(100, 150, 255, 0.5);
+}
+
+.explanation-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  color: #e8e8e8;
+}
+
+.next-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  flex: 1;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.answer-button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 16px 20px;
+  font-size: 1rem;
+  color: #e8e8e8;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.answer-button:hover:not(.selected) {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.answer-button.selected {
+  background: rgba(100, 150, 255, 0.2);
+  border-color: #6496ff;
+  font-weight: 600;
+}
+
+.next-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  flex: 1;
+}
+
+.next-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.input-section {
+  margin-bottom: 25px;
+}
+
+.input-prompt {
+  font-size: 1.1rem;
+  color: #b8c5d6;
+  margin-bottom: 15px;
+}
+
+.input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-field label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e8e8e8;
+  min-width: 30px;
+}
+
+.input-field input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #e8e8e8;
+  transition: all 0.3s ease;
+}
+
+.input-field input:focus {
+  outline: none;
+  border-color: #6496ff;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.input-field input::placeholder {
+  color: rgba(232, 232, 232, 0.5);
+}
+
+.calculation-result {
+  background: rgba(100, 150, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid #6496ff;
+  text-align: center;
+}
+
+.result-label {
+  font-size: 1rem;
+  color: #b8c5d6;
+  margin: 0 0 10px 0;
+}
+
+.result-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 0 2px 10px rgba(100, 150, 255, 0.5);
+}
+
+.next-button:disabled {
+  background: rgba(255, 255, 255, 0.1);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.next-button:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.button-container {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.previous-button,
+.reset-button {
+  background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.previous-button:hover,
+.reset-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(107, 114, 128, 0.4);
+}
