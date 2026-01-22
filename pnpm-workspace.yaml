@@ -1,2 +1,4 @@
 overrides:
-  vite: "npm:rolldown-vite@latest"
+  seroval@<1.4.1: '>=1.4.1'
+  seroval@<=1.4.0: '>=1.4.1'
+  vite: npm:rolldown-vite@latest
