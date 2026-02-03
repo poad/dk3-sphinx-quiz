@@ -39,8 +39,8 @@ importers:
         specifier: ^4.4.4
         version: 4.4.4(eslint-plugin-import@2.32.0)(eslint@9.39.2(jiti@2.6.1))
       eslint-plugin-boundaries:
-        specifier: ^5.3.1
-        version: 5.3.1(@typescript-eslint/parser@8.54.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@9.39.2(jiti@2.6.1))
+        specifier: ^5.4.0
+        version: 5.4.0(@typescript-eslint/parser@8.54.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@9.39.2(jiti@2.6.1))
       eslint-plugin-import:
         specifier: ^2.32.0
         version: 2.32.0(@typescript-eslint/parser@8.54.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@9.39.2(jiti@2.6.1))
@@ -152,8 +152,8 @@ packages:
     resolution: {integrity: sha512-LwdZHpScM4Qz8Xw2iKSzS+cfglZzJGvofQICy7W7v4caru4EaAmyUuO6BGrbyQ2mYV11W0U8j5mBhd14dd3B0A==}
     engines: {node: '>=6.9.0'}
 
-  '@boundaries/elements@1.1.2':
-    resolution: {integrity: sha512-DnGHL+v36YVMoWhWZqyJYVZ9dapNm7h4N3/P0lDPirJj0CHVPkjChMCCotj74cg6LW7iPJZFGrdEfh0X0g2bmQ==}
+  '@boundaries/elements@1.2.0':
+    resolution: {integrity: sha512-W65Gum02liMd3hmNrLmDBX1u5BmRMcunouFjLXyhxHnNY4YlK1kTxsgfflZ5XBGSnPnO0MkiUzAcoGzYrlx0RQ==}
     engines: {node: '>=18.18'}
 
   '@emnapi/core@1.8.1':
@@ -791,8 +791,8 @@ packages:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
     engines: {node: '>=6'}
 
-  caniuse-lite@1.0.30001766:
-    resolution: {integrity: sha512-4C0lfJ0/YPjJQHagaE9x2Elb69CIqEPZeG0anQt9SIvIoOH4a4uaRl73IavyO+0qZh6MDLH//DrXThEYKHkmYA==}
+  caniuse-lite@1.0.30001767:
+    resolution: {integrity: sha512-34+zUAMhSH+r+9eKmYG+k2Rpt8XttfE4yXAjoZvkAPs15xcYQhyBYdalJ65BzivAvGRMViEjy6oKr/S91loekQ==}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -964,8 +964,8 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
 
-  eslint-plugin-boundaries@5.3.1:
-    resolution: {integrity: sha512-91StsOYtDyrna1fyRJ+1Ps5CnrfyFLbdCouPZ3E/o2cllLxJke3OoScdqjpBSl7pNEYbojhpNlurQAr30sf9Bg==}
+  eslint-plugin-boundaries@5.4.0:
+    resolution: {integrity: sha512-6SQmEhXCqGrrxm9YiM24SC95CqrVi2MUOm5SDrfquceh/os8MIAvZYsDU69zvtCSb1S6UbNEmdioi1gCDc8+VQ==}
     engines: {node: '>=18.18'}
     peerDependencies:
       eslint: '>=6.0.0'
@@ -1998,7 +1998,7 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
-  '@boundaries/elements@1.1.2(@typescript-eslint/parser@8.54.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@9.39.2(jiti@2.6.1))':
+  '@boundaries/elements@1.2.0(@typescript-eslint/parser@8.54.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@9.39.2(jiti@2.6.1))':
     dependencies:
       eslint-import-resolver-node: 0.3.9
       eslint-module-utils: 2.12.1(@typescript-eslint/parser@8.54.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@4.4.4)(eslint@9.39.2(jiti@2.6.1))
@@ -2562,7 +2562,7 @@ snapshots:
   browserslist@4.28.1:
     dependencies:
       baseline-browser-mapping: 2.9.19
-      caniuse-lite: 1.0.30001766
+      caniuse-lite: 1.0.30001767
       electron-to-chromium: 1.5.283
       node-releases: 2.0.27
       update-browserslist-db: 1.2.3(browserslist@4.28.1)
@@ -2586,7 +2586,7 @@ snapshots:
 
   callsites@3.1.0: {}
 
-  caniuse-lite@1.0.30001766: {}
+  caniuse-lite@1.0.30001767: {}
 
   chalk@4.1.2:
     dependencies:
@@ -2824,9 +2824,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-boundaries@5.3.1(@typescript-eslint/parser@8.54.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@9.39.2(jiti@2.6.1)):
+  eslint-plugin-boundaries@5.4.0(@typescript-eslint/parser@8.54.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@9.39.2(jiti@2.6.1)):
     dependencies:
-      '@boundaries/elements': 1.1.2(@typescript-eslint/parser@8.54.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@9.39.2(jiti@2.6.1))
+      '@boundaries/elements': 1.2.0(@typescript-eslint/parser@8.54.0(eslint@9.39.2(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@4.4.4)(eslint@9.39.2(jiti@2.6.1))
       chalk: 4.1.2
       eslint: 9.39.2(jiti@2.6.1)
       eslint-import-resolver-node: 0.3.9
