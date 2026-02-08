@@ -1,4 +1,6 @@
 overrides:
   seroval@<1.4.1: '>=1.4.1'
-  seroval@<=1.4.0: '>=1.4.1'
   vite: npm:rolldown-vite@latest
+  eslint: '>=10'
+  '@eslint/js': '>=10'
+  '@stylistic/eslint-plugin': '>=5.0.0'
