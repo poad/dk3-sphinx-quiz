@@ -26,16 +26,16 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
       '@eslint/js':
-        specifier: '>=10'
+        specifier: ^10.0.1
         version: 10.0.1(eslint@10.0.0(jiti@2.6.1))
       '@stylistic/eslint-plugin':
-        specifier: '>=5.0.0'
+        specifier: ^5.8.0
         version: 5.8.0(eslint@10.0.0(jiti@2.6.1))
       '@types/node':
         specifier: ^25.2.3
         version: 25.2.3
       eslint:
-        specifier: '>=10'
+        specifier: ^10.0.0
         version: 10.0.0(jiti@2.6.1)
       eslint-import-resolver-typescript:
         specifier: ^4.4.4
@@ -65,7 +65,7 @@ importers:
         specifier: ^8.55.0
         version: 8.55.0(eslint@10.0.0(jiti@2.6.1))(typescript@5.9.3)
       vite:
-        specifier: npm:rolldown-vite@latest
+        specifier: npm:rolldown-vite@^7.3.1
         version: rolldown-vite@7.3.1(@types/node@25.2.3)(esbuild@0.27.2)(jiti@2.6.1)
       vite-plugin-solid:
         specifier: ^2.11.10
