@@ -36,8 +36,8 @@ importers:
         specifier: '>=5.0.0'
         version: 5.9.0(eslint@10.0.2(jiti@2.6.1))
       '@types/node':
-        specifier: ^25.3.1
-        version: 25.3.1
+        specifier: ^25.3.2
+        version: 25.3.2
       eslint:
         specifier: '>=10'
         version: 10.0.2(jiti@2.6.1)
@@ -70,10 +70,10 @@ importers:
         version: 8.56.1(eslint@10.0.2(jiti@2.6.1))(typescript@5.9.3)
       vite:
         specifier: npm:rolldown-vite@latest
-        version: rolldown-vite@7.3.1(@types/node@25.3.1)(esbuild@0.27.2)(jiti@2.6.1)
+        version: rolldown-vite@7.3.1(@types/node@25.3.2)(esbuild@0.27.2)(jiti@2.6.1)
       vite-plugin-solid:
         specifier: ^2.11.10
-        version: 2.11.10(rolldown-vite@7.3.1(@types/node@25.3.1)(esbuild@0.27.2)(jiti@2.6.1))(solid-js@1.9.11)
+        version: 2.11.10(rolldown-vite@7.3.1(@types/node@25.3.2)(esbuild@0.27.2)(jiti@2.6.1))(solid-js@1.9.11)
 
 packages:
 
@@ -544,8 +544,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@25.3.1':
-    resolution: {integrity: sha512-hj9YIJimBCipHVfHKRMnvmHg+wfhKc0o4mTtXh9pKBjC8TLJzz0nzGmLi5UJsYAUgSvXFHgb0V2oY10DUFtImw==}
+  '@types/node@25.3.2':
+    resolution: {integrity: sha512-RpV6r/ij22zRRdyBPcxDeKAzH43phWVKEjL2iksqo1Vz3CuBUrgmPpPhALKiRfU7OMCmeeO9vECBMsV0hMTG8Q==}
 
   '@typescript-eslint/eslint-plugin@8.56.1':
     resolution: {integrity: sha512-Jz9ZztpB37dNC+HU2HI28Bs9QXpzCz+y/twHOwhyrIRdbuVDxSytJNDl6z/aAKlaRIwC7y8wJdkBv7FxYGgi0A==}
@@ -2322,7 +2322,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@25.3.1':
+  '@types/node@25.3.2':
     dependencies:
       undici-types: 7.18.2
 
@@ -3489,7 +3489,7 @@ snapshots:
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
 
-  rolldown-vite@7.3.1(@types/node@25.3.1)(esbuild@0.27.2)(jiti@2.6.1):
+  rolldown-vite@7.3.1(@types/node@25.3.2)(esbuild@0.27.2)(jiti@2.6.1):
     dependencies:
       '@oxc-project/runtime': 0.101.0
       fdir: 6.5.0(picomatch@4.0.3)
@@ -3499,7 +3499,7 @@ snapshots:
       rolldown: 1.0.0-beta.53
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 25.3.1
+      '@types/node': 25.3.2
       esbuild: 0.27.2
       fsevents: 2.3.3
       jiti: 2.6.1
@@ -3790,7 +3790,7 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  vite-plugin-solid@2.11.10(rolldown-vite@7.3.1(@types/node@25.3.1)(esbuild@0.27.2)(jiti@2.6.1))(solid-js@1.9.11):
+  vite-plugin-solid@2.11.10(rolldown-vite@7.3.1(@types/node@25.3.2)(esbuild@0.27.2)(jiti@2.6.1))(solid-js@1.9.11):
     dependencies:
       '@babel/core': 7.29.0
       '@types/babel__core': 7.20.5
@@ -3798,14 +3798,14 @@ snapshots:
       merge-anything: 5.1.7
       solid-js: 1.9.11
       solid-refresh: 0.6.3(solid-js@1.9.11)
-      vite: rolldown-vite@7.3.1(@types/node@25.3.1)(esbuild@0.27.2)(jiti@2.6.1)
-      vitefu: 1.1.2(rolldown-vite@7.3.1(@types/node@25.3.1)(esbuild@0.27.2)(jiti@2.6.1))
+      vite: rolldown-vite@7.3.1(@types/node@25.3.2)(esbuild@0.27.2)(jiti@2.6.1)
+      vitefu: 1.1.2(rolldown-vite@7.3.1(@types/node@25.3.2)(esbuild@0.27.2)(jiti@2.6.1))
     transitivePeerDependencies:
       - supports-color
 
-  vitefu@1.1.2(rolldown-vite@7.3.1(@types/node@25.3.1)(esbuild@0.27.2)(jiti@2.6.1)):
+  vitefu@1.1.2(rolldown-vite@7.3.1(@types/node@25.3.2)(esbuild@0.27.2)(jiti@2.6.1)):
     optionalDependencies:
-      vite: rolldown-vite@7.3.1(@types/node@25.3.1)(esbuild@0.27.2)(jiti@2.6.1)
+      vite: rolldown-vite@7.3.1(@types/node@25.3.2)(esbuild@0.27.2)(jiti@2.6.1)
 
   which-boxed-primitive@1.1.1:
     dependencies:
