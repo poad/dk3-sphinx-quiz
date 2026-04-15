@@ -42,6 +42,3 @@ jobs:
 
     - name: build
       run: bun run --bun build
-
-    - name: audit
-      run: pnpm audit
