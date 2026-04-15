@@ -1,11 +1,39 @@
+packages:
+  - ./basic
+  - ./solid-element
+  - ./with-rspack
+  - ./with-vanila-extract
+  - ./with-vite-pages
+  - ./tanstack-start-example
+
+minimumReleaseAge: 10080 # 7 days in minutes
+minimumReleaseAgeExclude:
+  - lodash@4.18.1
+  - lodash-es@4.18.1
+  - defu@6.1.6
+  - vite@8.0.6
+  - rolldown@1.0.0-rc.13
+  - '@rolldown/*'
+
 overrides:
-  '@eslint/eslintrc>ajv': ^6.12.4
   '@eslint/js': '>=10'
-  '@stylistic/eslint-plugin': '>=5.0.0'
-  ajv@<8.18.0: '>=8.18.0'
+  brace-expansion@<1.1.13: '>=1.1.13'
+  brace-expansion@>=2.0.0 <2.0.3: '>=2.0.3'
+  chokidar: '>=5'
+  defu@<=6.1.4: '>=6.1.5'
   eslint: '>=10'
-  eslint>ajv: ^6.12.4
+  h3@<1.15.6: '>=1.15.6'
+  h3@<1.15.9: '>=1.15.9'
+  h3@<=1.15.4: '>=1.15.5'
+  h3@<=1.15.8: '>=1.15.9'
   handlebars@>=4.0.0 <4.7.9: '>=4.7.9'
-  minimatch@<10.2.1: '>=10.2.1'
-  seroval@<1.4.1: '>=1.4.1'
-  vite: npm:rolldown-vite@latest
+  handlebars@>=4.0.0 <=4.7.8: '>=4.7.9'
+  handlebars@>=4.6.0 <=4.7.8: '>=4.7.9'
+  lodash-es@<=4.17.23: '>=4.18.0'
+  lodash-es@>=4.0.0 <=4.17.23: '>=4.18.0'
+  semver: '>=7'
+  vite: '>=8.0.5'
+
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  - 'vite@6.4.1'
