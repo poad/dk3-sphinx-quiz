@@ -19,7 +19,7 @@
     "@eslint/js": "^10.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/node": "^25.6.0",
-    "eslint": "^10.2.0",
+    "eslint": "^10.2.1",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-boundaries": "^6.0.2",
     "eslint-plugin-import": "^2.32.0",
@@ -27,7 +27,7 @@
     "eslint-plugin-solid": "^0.14.5",
     "globals": "^17.5.0",
     "jiti": "^2.6.1",
-    "typescript": "^6.0.2",
+    "typescript": "^6.0.3",
     "typescript-eslint": "^8.58.2",
     "vite": "^8.0.8",
     "vite-plugin-solid": "^2.11.12"
