@@ -5,38 +5,31 @@ CUR=$(pwd)
 CURRENT=$(cd "$(dirname "$0")" || exit;pwd)
 echo "${CURRENT}"
 
-result=$(cd "${CURRENT}" || exit)
-if [ "$result" -ne 0 ]; then
+if ! (cd "${CURRENT}" || exit); then
   cd "${CUR}" || exit
-  exit "$result"
+  exit 1
 fi
 
-result=$(git pull --prune)
-if [ "$result" -ne 0 ]; then
+if ! (git pull --prune); then
   cd "${CUR}" || exit
-  exit "$result"
+  exit 1
 fi
 echo ""
 pwd
 
-# result=$(npx -y pnpm@latest self-update && pnpm install && pnpm up && pnpm audit --fix && pnpm up && pnpm lint-fix && pnpm clean && rm -rf dist && pnpm build && pnpm package && git add .)
-result=$(npx -y pnpm@latest self-update && pnpm install && pnpm up && pnpm up && pnpm lint-fix && pnpm clean && rm -rf dist && pnpm build && pnpm package && git add .)
-if [ "$result" -ne 0 ]; then
+if ! (rm -rf node_modules && npx -y pnpm@latest self-update && pnpm install && pnpm up && pnpm audit --fix override && pnpm up && pnpm lint-fix && pnpm clean && rm -rf dist && pnpm build && git add .); then
   cd "${CUR}" || exit
-  exit "$result"
+  exit 1
 fi
 
-cd "${CURRENT}" || exit
-result=$?
-if [ "$result" -ne 0 ]; then
+if ! (cd "${CURRENT}" || exit); then
   cd "${CUR}" || exit
-  exit "$result"
+  exit 1
 fi
-git commit -am "Bumps node modules" && git push
-result=$?
-if [ "$result" -ne 0 ]; then
+
+if ! (git commit -am "Bumps node modules" && git push); then
   cd "${CUR}" || exit
-  exit "$result"
+  exit 1
 fi
 
 cd "${CUR}" || exit
