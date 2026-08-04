@@ -1,41 +1,20 @@
 packages:
-  - ./basic
-  - ./solid-element
-  - ./with-rspack
-  - ./with-vanila-extract
-  - ./with-vite-pages
-  - ./tanstack-start-example
+  - ./
 
 allowBuilds:
   unrs-resolver: false
 
 minimumReleaseAge: 10080 # 7 days in minutes
 minimumReleaseAgeExclude:
-  - lodash@4.18.1
-  - lodash-es@4.18.1
-  - defu@6.1.6
-  - vite@8.0.6
-  - rolldown@1.0.0-rc.13
-  - '@rolldown/*'
+  - pnpm@11.20.0
+  - brace-expansion@1.1.17 || 1.1.18 || 5.0.9
 
 overrides:
-  '@eslint/js': '>=10'
-  brace-expansion@<1.1.13: '>=1.1.13'
-  brace-expansion@>=2.0.0 <2.0.3: '>=2.0.3'
+  brace-expansion@<1.1.17: ^1.1.17
+  brace-expansion@<1.1.18: ^1.1.18
+  brace-expansion@>=4.0.0 <5.0.9: ^5.0.9
   chokidar: '>=5'
-  defu@<=6.1.4: '>=6.1.5'
-  eslint: '>=10'
-  h3@<1.15.6: '>=1.15.6'
-  h3@<1.15.9: '>=1.15.9'
-  h3@<=1.15.4: '>=1.15.5'
-  h3@<=1.15.8: '>=1.15.9'
-  handlebars@>=4.0.0 <4.7.9: '>=4.7.9'
-  handlebars@>=4.0.0 <=4.7.8: '>=4.7.9'
-  handlebars@>=4.6.0 <=4.7.8: '>=4.7.9'
-  lodash-es@<=4.17.23: '>=4.18.0'
-  lodash-es@>=4.0.0 <=4.17.23: '>=4.18.0'
   semver: '>=7'
-  vite: '>=8.0.5'
 
 trustPolicy: no-downgrade
 trustPolicyExclude:
