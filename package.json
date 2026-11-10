@@ -7,42 +7,35 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint",
-    "lint-fix": "eslint --fix"
+    "oxlint:check": "oxlint",
+    "oxlint:fix": "oxlint --fix",
+    "oxfmt:fix": "oxfmt",
+    "oxfmt:check": "oxfmt --check",
+    "lint": "pnpm '/^.*:check$/'",
+    "lint-fix": "pnpm '/^.*:fix$/'"
   },
   "dependencies": {
-    "solid-js": "^1.9.17"
+    "solid-js": "^1.9.18"
   },
   "devDependencies": {
-    "@eslint/compat": "^2.1.1",
-    "@eslint/eslintrc": "^3.3.7",
-    "@eslint/js": "^10.0.1",
-    "@stylistic/eslint-plugin": "^5.10.0",
-    "@types/node": "^26.6.5",
-    "eslint": "^10.12.0",
-    "eslint-import-resolver-typescript": "^4.4.5",
-    "eslint-plugin-boundaries": "^7.2.0",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-promise": "^7.3.0",
-    "eslint-plugin-solid": "^0.18.1",
-    "globals": "^17.13.0",
-    "jiti": "^2.7.0",
-    "typescript": "^6.0.3",
-    "typescript-eslint": "^8.71.2",
-    "vite": "^8.3.4",
-    "vite-plugin-solid": "^2.11.14"
+    "@types/node": "^26.6.6",
+    "oxfmt": "^0.76.0",
+    "oxlint": "^1.91.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vite-plugin-solid": "^2.11.15"
   },
   "devEngines": {
     "packageManager": {
       "name": "pnpm",
-      "version": "12.15.0",
+      "version": "12.19.0",
       "onFail": "download"
     }
   },
   "engines": {
     "runtime": {
       "name": "node",
-      "version": "^24.22.1",
+      "version": "^26.13.0",
       "onFail": "download"
     }
   }

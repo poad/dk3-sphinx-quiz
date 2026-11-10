@@ -14,8 +14,8 @@ export function Question2(props: Question2Props) {
     const val2 = parseFloat(input2());
     if (isNaN(val1) || isNaN(val2)) return null;
     return {
-      fourLegged: (val2 / 2) - val1,
-      twoLegged: (2 * val1) - (val2 / 2),
+      fourLegged: val2 / 2 - val1,
+      twoLegged: 2 * val1 - val2 / 2,
     };
   });
 
